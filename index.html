@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triple X Fitness</title>
+    <style>
+    body{
+        margin: 0;
+        background-color: #fff;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header {
+        background: #333;
+        color: #fff;
+        padding: 25px;
+    }
+    header .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+    nav ul li {
+        margin: 0 15px;
+    }
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    nav ul li a:hover {
+        background-color: #fff;
+        color: #333;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    #SignUp{
+        background-color: #fff;
+        color: #333;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .main {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+    .cards-container {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        padding: 1rem;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card img {
+        max-width: 100%;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+    .card h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .card p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    .card .button {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        color: #fff;
+        background: #333;
+        border: none;
+        border-radius: 4px;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: background 0.3s ease;
+    }
+    .card .button:hover {
+        background: #bbbbbb;
+    }
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+    .first img{
+        width: 370px;
+        border-radius: 10px;
+    }
+    .first{
+        width: 400px;
+        text-align: center;
+        border-top: 3px solid rgb(195, 2, 2);
+        border-bottom: 3px solid rgb(195, 2, 2);
+        border-right: 3px solid rgb(195, 2, 2);
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px;
+        margin-left: 20px;
+    }
+    .second img{
+        width: 400px;
+        border-radius: 10px;
+    }
+    .second{
+        width: 500px;
+        text-align: center;
+        border-top: 3px solid rgb(195, 2, 2);
+        border-bottom: 3px solid rgb(195, 2, 2);
+        box-shadow: 5px 0px 10px, -5px 5px 10px;
+        margin-left: 500px;
+    }
+    .third img{
+        width: 370px;
+        border-radius: 10px;
+    }
+    .third{
+        width: 400px;
+        text-align: center;
+        border-top: 3px solid rgb(195, 2, 2);
+        border-bottom: 3px solid rgb(195, 2, 2);
+        border-left: 3px solid rgb(195, 2, 2);
+        border-radius: 10px;
+        box-shadow: -5px -5px 10px;
+        float: right;
+        margin-right: 20px;
+    }
+    .joinus{
+        text-align: center;
+        padding: 30px;
+        background-color: #333;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+    }
+    .joinus button{
+        padding: 20px;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 30px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .joinus button:hover{
+        transform: scale(1.05);
+        padding: 20px;
+        background: #bbbbbb;
+        color: #000;
+        border: 1px solid #ddd;
+        border-radius: 30px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Triple X Fitness</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="AboutUs.html" target="_blank">About</a></li>
+                <li><a  href="services.html" target="_blank">Services</a></li>
+                <li><a href="ContactUs.html" target="_blank">Contact</a></li>
+                <li><a id="SignUp" href="login.html" target="_blank">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <main class="main">
+        <section class="cards-container">
+            <div class="card">
+                <img src="images/personalTraining.jpeg" alt="photo1">
+                <h3>Personal Training</h3>
+                <p>Train with best coaches, and start now!</p>
+                <a href="services.html#here1" target="_blank" class="button">Read More</a>
+            </div>
+            <div class="card">
+                <img src="images/food.webp" alt="photo2">
+                <h3>Nutrition Plans</h3>
+                <p>Improve your health with best plans, and become more healther.</p>
+                <a href="services.html#here2" target="_blank" class="button">Read More</a>
+            </div>
+            <div class="card">
+                <img src="images/Nutritionist.jpeg" alt="photo3">
+                <h3>Nutrition Consultation</h3>
+                <p>Contact with best nutritionists. Check it out to learn more!</p>
+                <a href="services.html#here3" target="_blank" class="button">Read More</a>
+            </div>
+        </section>
+    </main>
+    <br>
+    <div class="joinus">
+        <button>Join Us Now</button>
+    </div>
+    <br><br><br>
+    <div class="first">
+        <br>
+        <h2>Become Stronger</h2>
+        <br>
+        <img src="images/cbum.jpeg" alt="cbum">
+        <br><br>
+    </div>
+    <br>
+    <div class="second">
+        <br>
+        <h2>Healther</h2>
+        <br>
+        <img src="images/homePhoto.jpg" alt="running">
+        <br><br>
+    </div>
+    <br>
+    <div class="third">
+        <br>
+        <h2>And focus on your goals</h2>
+        <br>
+        <img src="images/focus.jpeg" alt="focu">
+        <br><br>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <p>&copy; 2024 Triple X Fitness. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

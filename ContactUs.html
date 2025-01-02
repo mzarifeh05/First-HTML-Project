@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Triple X Fitness</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f5f0;
+            color: #333;
+        }
+
+        header {
+            background-color: gray;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header .logo {
+            position: absolute;
+            top: 50%;
+            left: 2rem;
+            transform: translateY(-50%);
+        }
+
+        header .logo img {
+            height: 150px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 3rem auto;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: black
+        }
+
+        .contact-info {
+            margin-bottom: 3rem;
+        }
+
+        .contact-info h2 {
+            margin-bottom: 1.5rem;
+            color: #808081;
+        }
+
+        .contact-info p {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        form {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        label {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #808081;
+        }
+
+        input,
+        textarea,
+        button {
+            padding: 1rem;
+            border: 1px solid #808081;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #808081;
+        }
+
+        button {
+            background-color: #808081;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #616161;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #808081;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/triple x fitness.png" alt="Triple X Fitness Logo">
+        </div>
+        <h1>Triple X Fitness - Contact Us</h1>
+    </header>
+    <div class="container">
+        <section class="contact-info">
+            <h2>Our Contact Details</h2>
+            <p><strong>Address:</strong> Amman - jubeiha</p>
+            <p><strong>Phone:</strong> +962796543212</p>
+            <p><strong>Email:</strong> contact@triplexcenter.com</p>
+        </section>
+        <section>
+            <h2>Send Us a Message</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Triple X Fitness. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
