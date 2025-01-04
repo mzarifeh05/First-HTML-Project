@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Sports Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: gray;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1{
+            color: white;
+            text-decoration: underline;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: gray;
+        }
+
+        .faq {
+            margin-bottom: 15px;
+        }
+
+        .faq h3 {
+            cursor: pointer;
+            margin: 0;
+            padding: 10px;
+            background: gray;
+            color: white;
+            border-radius: 4px;
+        }
+
+        .faq p {
+            margin: 0;
+            padding: 10px;
+            background: #f9f9f9;
+            display: none;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Triple X Fitness Website</h1>
+</header>
+
+<div class="faq-container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq">
+        <h3>What types of sports does the website cover?</h3>
+        <p>We cover a wide range of sports such as football, basketball, tennis, and running.</p>
+    </div>
+
+    <div class="faq">
+        <h3>How can I register at the sports club?</h3>
+        <p>You can register by visiting the registration page and filling out the form with the required information.</p>
+    </div>
+
+    <div class="faq">
+        <h3>Do you offer training programs for children?</h3>
+        <p>Yes, we have training programs tailored for children of all ages.</p>
+    </div>
+
+    
+    <div class="faq">
+        <h3>Do you provide personal training sessions?</h3>
+        <p>Yes, we offer personal training sessions with certified trainers. You can book a session through our website.</p>
+    </div>
+
+    <div class="faq">
+        <h3>Are there any membership discounts available?</h3>
+        <p>We offer discounts for students, families, and long-term memberships. Check our membership page for more details.</p>
+    </div>
+    <div class="faq">
+        <h3>What are your working hours?</h3>
+        <p>We operate from 6:00 AM to 10:00 PM daily.</p>
+    </div>
+
+</div>
+
+<script>
+    // Enable toggling answers
+    document.querySelectorAll('.faq h3').forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>
